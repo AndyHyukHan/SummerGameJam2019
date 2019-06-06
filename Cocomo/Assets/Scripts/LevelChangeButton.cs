@@ -4,21 +4,29 @@ using UnityEngine;
 
 public class LevelChangeButton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Clicked()
     {
-        
+        Debug.Log("Clicked");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SceneChange(string sceneName)
     {
-        
+        Debug.Log("Change scene to: " + sceneName);
+
+
     }
 
-    // FixedUpdate is called once per frame for physics effects
-    void FixedUpdate()
+    public void ReloadScene()
     {
+        Debug.Log("Reload scene");
+
+
+    }
+
+    public void ExitApp()
+    {
+        Debug.Log("Quitting application");
+
 
     }
 }
